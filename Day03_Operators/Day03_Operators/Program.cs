@@ -8,22 +8,22 @@ namespace Day03_Operators
 {
     class Program
     {
-        // Complete the solve function below.
-        static void solve(double meal_cost, int tip_percent, int tax_percent)
+        static int calculateTotalCost(double mealCost, int tipPercent, int taxPercent)
         {
+            double tip = mealCost * ((double)tipPercent / 100);
+            double tax = mealCost * ((double)taxPercent / 100);
+            int totalCost = (int)Math.Round(mealCost + tip + tax);
 
-
+            return totalCost;
         }
 
         static void Main(string[] args)
         {
-            double meal_cost = Convert.ToDouble(Console.ReadLine());
+            double mealCost = Convert.ToDouble(Console.ReadLine());
+            int tipPercent = Convert.ToInt32(Console.ReadLine());
+            int taxPercent = Convert.ToInt32(Console.ReadLine());
 
-            int tip_percent = Convert.ToInt32(Console.ReadLine());
-
-            int tax_percent = Convert.ToInt32(Console.ReadLine());
-
-            solve(meal_cost, tip_percent, tax_percent);
+            Console.WriteLine(calculateTotalCost(mealCost, tipPercent, taxPercent));
         }
     }
 }
