@@ -14,17 +14,17 @@ namespace Day01_DataTypes
             double d = 4.0;
             string s = "HackerRank ";
 
+            int myInt;
+            double myDouble;
+            string myString;
 
-            // Declare second integer, double, and String variables.
+            myInt = Int32.Parse(Console.ReadLine());
+            myDouble = Double.Parse(Console.ReadLine());
+            myString = Console.ReadLine();
 
-            // Read and save an integer, double, and String to your variables.
-
-            // Print the sum of both integer variables on a new line.
-
-            // Print the sum of the double variables on a new line.
-
-            // Concatenate and print the String variables on a new line
-            // The 's' variable above should be printed first.
+            Console.WriteLine((i + myInt).ToString());
+            Console.WriteLine((d + myDouble).ToString("F1"));
+            Console.WriteLine(s + myString);
         }
     }
 }
