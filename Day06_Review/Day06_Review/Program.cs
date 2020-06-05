@@ -1,8 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+/*
+  OO 06-04-2020
+
+  Task
+  ----------------------------------------------------------------------------------------------------------
+  Given a string, S, of length N that is indexed from 0 to N - 1, print its even-indexed and odd-indexed
+  characters as 2 space-separated strings on a single line (see the Sample below for more detail).
+
+  Input Format
+  ----------------------------------------------------------------------------------------------------------
+  The first line contains an integer, T (the number of test cases).
+  Each line i of the T subsequent lines contain a String, S.
+
+  Sample Input
+  ----------------------------------------------------------------------------------------------------------
+  2
+  Hacker
+  Rank
+
+  Sample Output
+  ----------------------------------------------------------------------------------------------------------
+  Hce akr
+  Rn ak
+*/
 
 namespace Day06_Review
 {
@@ -34,6 +55,8 @@ namespace Day06_Review
             for (int i = 0; i < tests; i++){
                 Console.WriteLine(ParseEvenOddIndexChars(Console.ReadLine()));
             }
+
+            Console.ReadLine();
         }
     }
 }
