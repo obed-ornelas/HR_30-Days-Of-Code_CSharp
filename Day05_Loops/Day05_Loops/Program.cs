@@ -39,7 +39,7 @@ namespace Day05_Loops
 {
     class Program
     {
-        static void printFirst10Multiples(int number)
+        static void PrintFirst10Multiples(int number)
         {
             for (int i = 1; i <= 10; i++)
             {
@@ -51,7 +51,7 @@ namespace Day05_Loops
         {
             int n = Convert.ToInt32(Console.ReadLine());
 
-            printFirst10Multiples(n);
+            PrintFirst10Multiples(n);
 
             Console.ReadLine();
         }
