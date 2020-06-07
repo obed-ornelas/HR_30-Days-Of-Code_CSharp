@@ -1,5 +1,12 @@
 using System;
 
+/*
+    OO 06-07-2020
+
+    Given a base-10 integer, N, convert it to binary (base-2).
+    Then find and print the base-10 integer denoting the maximum number of consecutive 1's in N's binary representation.
+*/
+
 namespace Day10_BinaryNumbers
 {
     class Program
