@@ -1,16 +1,24 @@
-﻿using System;
+﻿// <copyright file="Program.cs" company="OO">
+// Copyright (c) OO. All rights reserved.
+// </copyright>
+
+using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Day12_Inheritance
 {
-    class Program
+    [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1600:Elements should be documented", Justification = "Main Entry Class")]
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            String title = Console.ReadLine();
-            String author = Console.ReadLine();
-            int price = Int32.Parse(Console.ReadLine());
-            Book new_novel = new MyBook(title, author, price);
-            new_novel.display();
+            string title = Console.ReadLine();
+            string author = Console.ReadLine();
+            int price = int.Parse(Console.ReadLine());
+
+            Book newNovel = new MyBook(title, author, price);
+
+            newNovel.Display();
         }
     }
 }
