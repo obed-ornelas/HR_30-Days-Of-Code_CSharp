@@ -9,6 +9,9 @@
   "settings": {
     "documentationRules": {
       "companyName": "OO"
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement": "outsideNamespace"
     }
   }
 }
