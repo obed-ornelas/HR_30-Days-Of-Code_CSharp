@@ -25,12 +25,21 @@ namespace Day12_Inheritance
             this.price = price;
         }
 
+        /// <summary>
+        /// Gets or Sets the Price of the Book.
+        /// </summary>
+        public int Price
+        {
+            get => this.price;
+            set => this.price = value;
+        }
+
         /// <inheritdoc/>
         public override void Display()
         {
-            Console.WriteLine("Title: {0}", this.title);
-            Console.WriteLine("Author: {0}", this.author);
-            Console.WriteLine("Price: {0}", this.price);
+            Console.WriteLine("Title: {0}", this.Title);
+            Console.WriteLine("Author: {0}", this.Author);
+            Console.WriteLine("Price: {0}", this.Price);
         }
     }
 }

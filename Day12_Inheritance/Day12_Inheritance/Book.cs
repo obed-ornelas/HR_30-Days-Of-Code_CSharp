@@ -13,12 +13,12 @@ namespace Day12_Inheritance
         /// <summary>
         /// Title of book.
         /// </summary>
-        protected string title;
+        private string title;
 
         /// <summary>
         /// Author of book.
         /// </summary>
-        protected string author;
+        private string author;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Book"/> class.
@@ -29,6 +29,24 @@ namespace Day12_Inheritance
         {
             this.title = title;
             this.author = author;
+        }
+
+        /// <summary>
+        /// Gets or Sets the Title of the Book.
+        /// </summary>
+        public string Title
+        {
+            get => this.title;
+            set => this.title = value;
+        }
+
+        /// <summary>
+        /// Gets or Sets the Author of the Book.
+        /// </summary>
+        public string Author
+        {
+            get => this.author;
+            set => this.author = value;
         }
 
         /// <summary>

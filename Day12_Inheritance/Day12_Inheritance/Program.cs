@@ -3,17 +3,27 @@
 // </copyright>
 
 using System;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Day12_Inheritance
 {
-    [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1600:Elements should be documented", Justification = "Main Entry Class")]
+    /// <summary>
+    /// Console Program Runner class.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Main entry method.
+        /// </summary>
+        /// <param name="args">arguments passed.</param>
         public static void Main(string[] args)
         {
+            Console.Write("Enter Book Title: ");
             string title = Console.ReadLine();
+
+            Console.Write("Enter Book Author: ");
             string author = Console.ReadLine();
+
+            Console.Write("Enter Book Price: ");
             int price = int.Parse(Console.ReadLine());
 
             Book newNovel = new MyBook(title, author, price);
