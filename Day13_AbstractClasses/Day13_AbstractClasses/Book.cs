@@ -2,7 +2,7 @@
 // Copyright (c) OO. All rights reserved.
 // </copyright>
 
-namespace Day12_Inheritance
+namespace Day13_AbstractClasses
 {
     /// <summary>
     /// Class <c>Book</c> models a book.

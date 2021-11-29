@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Day12_Inheritance
+namespace Day13_AbstractClasses
 {
     /// <summary>
     /// Console Program Runner class.

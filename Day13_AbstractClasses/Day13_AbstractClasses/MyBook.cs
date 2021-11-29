@@ -3,7 +3,7 @@
 // </copyright>
 using System;
 
-namespace Day12_Inheritance
+namespace Day13_AbstractClasses
 {
     /// <summary>
     /// Class that subclasses the abstract <see cref="Book"/>
