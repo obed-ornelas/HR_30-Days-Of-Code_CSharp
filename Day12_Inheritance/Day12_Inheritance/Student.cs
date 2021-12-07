@@ -1,53 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Day12_Inheritance
+﻿namespace Day12_Inheritance
 {
-    class Student : Person
+    public class Student : Person
     {
-        private int[] testScores;
+        private readonly int[] testScores;
 
-        /*	
-        *   Class Constructor
-        *   
-        *   Parameters: 
-        *   firstName - A string denoting the Person's first name.
-        *   lastName - A string denoting the Person's last name.
-        *   id - An integer denoting the Person's ID number.
-        *   scores - An array of integers denoting the Person's test scores.
-        */
-        // Write your constructor here
-
-        public Student(string firstName, string lastName, int idNumber, int[] scores) : base(firstName, lastName, idNumber)
+        public Student(string firstName, string lastName, int idNumber, int[] scores)
+            : base(firstName, lastName, idNumber)
         {
-            testScores = scores;
+            this.testScores = scores;
         }
-
-        /*	
-        *   Method Name: Calculate
-        *   Return: A character denoting the grade.
-        */
-        // Write your method here
-
-        private int GetScoresAverage()
-        {
-            int average = 0, total = 0;
-
-            foreach (int score in testScores)
-            {
-                total += score;
-            }
-
-            average = total / testScores.Length;
-
-            return average;
-        }
-
 
         public char Calculate()
         {
-            var average = GetScoresAverage();
+            var average = this.GetScoresAverage();
 
             if (average >= 90 && average <= 100)
             {
@@ -73,6 +38,20 @@ namespace Day12_Inheritance
             {
                 return 'T';
             }
+        }
+
+        private int GetScoresAverage()
+        {
+            int total = 0;
+
+            foreach (int score in this.testScores)
+            {
+                total += score;
+            }
+
+            int average = total / this.testScores.Length;
+
+            return average;
         }
     }
 }
