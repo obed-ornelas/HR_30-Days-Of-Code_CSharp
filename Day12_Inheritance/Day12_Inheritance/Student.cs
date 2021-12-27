@@ -1,18 +1,36 @@
-﻿namespace Day12_Inheritance
+﻿// <copyright file="Student.cs" company="OO">
+// Copyright (c) OO. All rights reserved.
+// </copyright>
+
+namespace Day12_Inheritance
 {
+    /// <summary>
+    /// Class <c>Student</c> models a student.
+    /// </summary>
     public class Student : Person
     {
         private readonly int[] testScores;
 
-        public Student(string firstName, string lastName, int idNumber, int[] scores)
-            : base(firstName, lastName, idNumber)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Student"/> class.
+        /// </summary>
+        /// <param name="firstName">First Name of a student.</param>
+        /// <param name="lastName">Lirst Name of a student.</param>
+        /// <param name="id">Id of a student.</param>
+        /// <param name="scores">Scores of a student.</param>
+        public Student(string firstName, string lastName, int id, int[] scores)
+            : base(firstName, lastName, id)
         {
             this.testScores = scores;
         }
 
+        /// <summary>
+        /// Calculates the letter representation of the average of score values.
+        /// </summary>
+        /// <returns>A character representating the average.</returns>
         public char Calculate()
         {
-            var average = this.GetScoresAverage();
+            int average = this.GetScoresAverage();
 
             if (average >= 90 && average <= 100)
             {
