@@ -50,7 +50,19 @@ Grade: O
 
 # Installation
 
-*TODO*
+1. Install [Visual Studio](https://visualstudio.microsoft.com/downloads/) (2019 or newer) if not already installed
+2. Install [.NET Core 3.1 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) or newer if not already installed
+
+3. Clone the repository from GitHub
+```
+git clone https://github.com/obed-ornelas/HR_30-Days-Of-Code_CSharp.git
+```
+
+## Running the Application
+
+1. Open the `.sln` file in `Day12_Inheritance` directory
+2. Press **Ctrl + F5** to build and run the program
+    1. Press **F5** to run the program in Debug mode
 
 # Credits
 [HackerRank](https://www.hackerrank.com/) 30 Days of Code - Challenge 12 
